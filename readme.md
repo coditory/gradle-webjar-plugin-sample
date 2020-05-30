@@ -1,4 +1,5 @@
 # Sample usage of [gradle-webjar-plugin](https://github.com/coditory/gradle-webjar-plugin)
+[![Build Status](https://travis-ci.com/coditory/gradle-webjar-plugin-sample.svg?branch=master)](https://travis-ci.com/coditory/gradle-webjar-plugin-sample)
 
 This project presents how to use [gradle-webjar-plugin](https://github.com/coditory/gradle-webjar-plugin)
 to separate front end and back end modules in a typical [Spring-boot](https://spring.io/projects/spring-boot) application.
