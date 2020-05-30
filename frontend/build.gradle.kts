@@ -1,3 +1,3 @@
 plugins {
-    id("com.coditory.webjar") version "0.1.2"
+    id("com.coditory.webjar") version "1.0.0"
 }
