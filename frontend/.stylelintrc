@@ -1,0 +1,8 @@
+extends:
+  - stylelint-config-standard
+ignoreFiles: [node_modules/**]
+rules:
+  selector-list-comma-newline-after: null
+  selector-pseudo-class-no-unknown: [true, {
+    ignorePseudoClasses: [local, global]
+  }]

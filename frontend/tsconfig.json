@@ -1,40 +1,31 @@
 {
   "compilerOptions": {
+    // target latest version of ECMAScript
     "target": "esnext",
-    "module": "esnext",
-    "strict": true,
-    "jsx": "preserve",
-    "importHelpers": true,
+    // search under node_modules for non-relative imports
     "moduleResolution": "node",
-    "experimentalDecorators": true,
+    // enable dynamic imports
+    "module": "esnext",
+    // don't emit; allow Babel to transform files
+    "noEmit": true,
+    // Process & infer types from .js files.
+    "allowJs": true,
+    // import non-ES modules as default imports
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
+    // enable decorators
+    "experimentalDecorators": true,
+    // emit source maps
     "sourceMap": true,
-    "baseUrl": ".",
-    "types": [
-      "webpack-env",
-      "jest"
-    ],
-    "paths": {
-      "@/*": [
-        "src/*"
-      ]
-    },
-    "lib": [
-      "esnext",
-      "dom",
-      "dom.iterable",
-      "scripthost"
-    ]
+    // add some strictness
+    "strict": true,
+    "strictNullChecks": false,
+    // support react (enable jsx in tsx)
+    "jsx": "react",
+    "skipLibCheck": true
   },
   "include": [
-    "src/**/*.ts",
-    "src/**/*.tsx",
-    "src/**/*.vue",
-    "tests/**/*.ts",
-    "tests/**/*.tsx"
-  ],
-  "exclude": [
-    "node_modules"
+    "src",
+    "test"
   ]
 }
